@@ -1,0 +1,84 @@
+.water{
+    background: #2F9AFF;
+}
+.fire{
+    background: #FF421C;
+}
+.flying{
+    background: #669AFF;
+}
+.bug{
+    background: #ABBC1C;
+}
+.poison{
+    background: #AB549A;
+}
+.normal{
+    background: #bcbcac;
+}
+.electric{
+    background: #FFCD30;
+}
+.ground{
+    background: #DEBC54;
+}
+.fairy{
+    background: #FFACFF;
+}
+.grass{
+    background:#78CD54 ;
+}
+.fighting{
+    background: #BC5442;
+}
+.psychic{
+    background: #FF549A;
+}
+.rock{
+    background: #bcac66;
+}
+.steel{
+    background: #abacbc;
+}
+.ice{
+    background: #78DEFF;
+}
+.ghost{
+    background: #6666BC;
+}
+.dragon{
+    background: #7866EF;
+}
+.dark{
+    background: #785442;
+}
+.aminationRighttoLeft{
+  animation: identifier ease-in-out 1.2s;
+  z-index: 5;
+  animation-fill-mode: forwards;
+}
+@keyframes identifier {
+    from{right: calc(10vw-20px);}
+    25% {right:calc(10vw - 490px);}
+    75%{right:calc(10vw - 490px);}
+  to {right: calc(10vw - 20px);}
+}
+#close{
+    animation: close ease-in-out 1s;
+}
+@keyframes reponse{
+    to{
+        top:20%
+    }
+}
+@keyframes close{
+    to{
+        bottom: -200%;
+    }
+}
+@media(max-width:1100px){
+    .aminationRighttoLeft{
+        animation: reponse ease-in-out 1.2s;
+        animation-fill-mode: forwards;
+    }
+}
